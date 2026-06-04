@@ -36,7 +36,7 @@ test('Second PlayWright Test', async ({page})=>{
     console.log(await cardTitle.allTextContents());
 });
 
-test.only('Third PlayWright Test', async ({browser})=>{
+test('Third PlayWright Test', async ({browser})=>{
     const context=await browser.newContext();
     const page=await context.newPage();
     await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
