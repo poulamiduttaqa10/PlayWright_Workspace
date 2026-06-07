@@ -60,3 +60,4 @@ test('Third PlayWright Test', async ({browser})=>{
     await expect(username).toHaveValue("rahulshettyacademy.com");
     console.log(await username.inputValue());
 });
+
