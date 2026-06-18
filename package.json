@@ -8,7 +8,7 @@
     "APITests": "npx playwright test --grep @API",
     "WEBTests": "npx playwright test --grep @Web",
     "report:allure": "npx allure generate ./allure-results -o ./allure-report --clean && allure open ./allure-report",
-    "failed" : "npx playwright test /tests/Networktest2.spec.js"
+    "failed" : "npx playwright test /tests/NetworkAssignment2.spec.js"
   },
   "keywords": [],
   "author": "",
