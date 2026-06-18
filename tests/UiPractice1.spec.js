@@ -12,7 +12,7 @@ test('Practice Login',async ({page})=>{
     await expect(cardTitles.first()).toContainText('ADIDAS ORIGINAL');
 })
 
-test.only('Practice Add to Cart',async ({page})=>{
+test('Practice Add to Cart',async ({page})=>{
     
     const productName="ZARA COAT 3";
     const userEmail="poulami.dutta.qa.10@gmail.com";
@@ -108,7 +108,7 @@ test.only('Practice Add to Cart',async ({page})=>{
     await page.locator(".email-title").waitFor();
    await expect(page.locator(".email-title")).toContainText(" order summary ");
    await expect(page.locator("div.col-text")).toContainText(trimOrderId);
-   await page.pause();
+   //await page.pause();
 })
 
 test('Ideal ',async ({page})=>{

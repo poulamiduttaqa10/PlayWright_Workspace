@@ -14,7 +14,7 @@ test.beforeAll(async ({browser})=>{
    webContext=await browser.newContext({storageState: 'state.json'});
 });
 
-test('SecondTest', async()=>{
+test('@API SecondTest', async()=>{
    const page=await webContext.newPage();;
    //const email = "anshika@gmail.com";
    const productName = 'ZARA COAT 3';

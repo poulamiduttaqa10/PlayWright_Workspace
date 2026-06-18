@@ -38,7 +38,7 @@ test("Upload download excel validations", async ({page})=>{
     const updatedValue=350;
     await page.goto("https://rahulshettyacademy.com/upload-download-test/");
     await page.getByRole('button',{name:'Download'}).waitFor();
-    await page.screenshot({path:'tests/screenshot/excelFormatOG.png'});
+    await page.screenshot({path:'tests/screenshots/excelFormatOG.png'});
     const downloadPromise=page.waitForEvent('download');
     await page.getByRole('button',{name:'Download'}).click();
     const download = await downloadPromise;
@@ -48,7 +48,7 @@ test("Upload download excel validations", async ({page})=>{
     await testExcel(searchText,updatedValue,{row:0,column:2},filePath);
     await page.locator("#fileinput").click();
     await page.locator("#fileinput").setInputFiles(filePath);
-    await page.screenshot({path:'tests/screenshot/excelFormatModified.png'});
+    await page.screenshot({path:'tests/screenshots/excelFormatModified.png'});
     //await page.pause();
     const searchTextLocator=await page.getByText(searchText);
     const desiredRow=await page.getByRole('row').filter({has: searchTextLocator});

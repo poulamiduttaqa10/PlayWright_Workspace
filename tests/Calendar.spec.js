@@ -28,7 +28,7 @@ test("Calendar", async ({page})=>{
         await expect(await page.locator('.react-date-picker__inputGroup__input').nth(i).inputValue()).toEqual(dateToSelect[i]);
         // page.locator('.react-date-picker__inputGroup__input')
     }
-    await page.pause();
+    //await page.pause();
 });
 
 test("Calendar validations Ideal",async({page})=>

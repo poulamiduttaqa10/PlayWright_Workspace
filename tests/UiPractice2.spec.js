@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-test.only("test",async ({page})=>{
+test("test",async ({page})=>{
  await page.goto("https://eventhub.rahulshettyacademy.com/login");
  await page.getByPlaceholder("you@email.com").fill("poulami.dutta.qa.10@gmail.com");
  await page.getByLabel("password").fill("ItsRaining@1");
@@ -25,7 +25,7 @@ test.only("test",async ({page})=>{
 //  await expect(page)
 futureDateValue(1);
 
-await page.pause();
+//await page.pause();
 });
 
 function futureDateValue(daysAhead = 1) {

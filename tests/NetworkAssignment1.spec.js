@@ -36,7 +36,7 @@ const loginAndGoToEvents = async (page) => {
 
 }
 
-test("Test 1 — Banner IS visible when 6 events are returned", async ({ page }) => {
+test("@API Test 1 — Banner IS visible when 6 events are returned", async ({ page }) => {
     page.route("**/api/events**", route => route.fulfill({
         status: 200,
         contentType: "application/json",
@@ -54,7 +54,7 @@ test("Test 1 — Banner IS visible when 6 events are returned", async ({ page })
 
 });
 
-test("Test 2 — Banner is NOT visible when 4 events are returned", async ({page})=>{
+test("@API Test 2 — Banner is NOT visible when 4 events are returned", async ({page})=>{
     await page.route("**/api/events**",route=>route.fulfill({
         status: 200,
         contentType: "application/json",

@@ -3,14 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "regression": "npx playwright test",
+    "APITests": "npx playwright test --grep @API",
+    "WEBTests": "npx playwright test --grep @Web",
+    "report:allure": "npx allure generate ./allure-results -o ./allure-report --clean && allure open ./allure-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.2"
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^25.6.2",
+    "allure-playwright": "^3.10.0",
+    "typescript": "^6.0.3"
   },
   "dependencies": {
     "exceljs": "^4.4.0"

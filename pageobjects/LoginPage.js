@@ -2,10 +2,11 @@
 const { test, expect } = require('@playwright/test');
 class LoginPage {
     constructor(page) {
-        this.signInButton = page.locator("[value='Login']");
-        this.userName = page.locator("#userEmail");
-        this.password = page.locator("#userPassword");
         this.page = page;
+        this.signInButton =this.page.locator('[type=submit]');// page.locator("[value='Login']");
+        this.userName = this.page.locator("#userEmail");
+        this.password = this.page.locator("#userPassword");
+        
     }
 
     async goTo() {

@@ -1,5 +1,5 @@
 const {test,expect, request }=require('@playwright/test');
-const {ApiUtils}=require('./utils/ApiUtils');
+const {ApiUtils}=require('../utils/ApiUtils');
 
 const loginPayLoad={
     userEmail: "poulami.dutta.qa.10@gmail.com",
@@ -18,7 +18,7 @@ test.beforeAll(async ()=>{
     response=await apiUtils.createOrder(orderPayLoad);
 });
 
-test('Ideal ',async ({page})=>{
+test('@API Ideal ',async ({page})=>{
       //js file- Login js, DashboardPage
   
 

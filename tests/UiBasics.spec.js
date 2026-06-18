@@ -55,6 +55,7 @@ test('Third PlayWright Test', async ({browser})=>{
     const arrText=text.split("@");
     const domain=arrText[1].split(" ")[0];
     console.log(domain);
+    await username.waitFor();
     await username.fill(domain);
     //await page.pause();
     await expect(username).toHaveValue("rahulshettyacademy.com");
