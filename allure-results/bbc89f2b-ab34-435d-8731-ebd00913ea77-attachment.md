@@ -1,0 +1,360 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: MoreValidations.spec.js >> Visual testing
+- Location: tests\MoreValidations.spec.js:34:1
+
+# Error details
+
+```
+Error: expect(Buffer).toMatchSnapshot(expected) failed
+
+  625430 pixels (ratio 0.68 of all image pixels) are different.
+
+  Snapshot: flightawareLanding.png
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "FlightAware logo" [ref=e5] [cursor=pointer]:
+        - /url: https://www.flightaware.com/
+        - img "FlightAware logo" [ref=e6]
+      - navigation [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - group [ref=e10]:
+              - generic "Products" [ref=e11] [cursor=pointer]
+          - listitem [ref=e12]:
+            - group [ref=e13]:
+              - generic "Industries" [ref=e14] [cursor=pointer]
+          - listitem [ref=e15]:
+            - group [ref=e16]:
+              - generic "ADS-B" [ref=e17] [cursor=pointer]
+          - listitem [ref=e18]:
+            - group [ref=e19]:
+              - generic "Flight Tracking" [ref=e20] [cursor=pointer]
+    - generic [ref=e21]:
+      - navigation [ref=e22]:
+        - list [ref=e23]:
+          - listitem [ref=e24]:
+            - group [ref=e25]:
+              - img [ref=e27] [cursor=pointer]
+      - link "Sign In" [ref=e29] [cursor=pointer]:
+        - /url: https://login.flightaware.com?redirect_uri=https://www.flightaware.com/
+      - link "Join for free" [ref=e30] [cursor=pointer]:
+        - /url: https://www.flightaware.com/account/join
+  - main [ref=e31]:
+    - generic [ref=e32]:
+      - generic:
+        - img "hero background" [ref=e33]
+        - link "Photo by Talon6" [ref=e34] [cursor=pointer]:
+          - /url: https://www.flightaware.com/photos/view/317437-75ba0e2c637327f72c41808d11e95de7d986cab6/staffpicksmonth/sort/date/page/1
+          - img [ref=e35]
+          - generic [ref=e37]: Photo by Talon6
+      - generic [ref=e38]:
+        - heading "FlightAware is Central to Aviation" [level=1] [ref=e39]:
+          - generic [ref=e40]: FlightAware
+          - text: is Central to Aviation
+        - generic [ref=e42]:
+          - img [ref=e44]
+          - generic [ref=e46]:
+            - textbox [ref=e47]
+            - generic:
+              - generic: Search for
+              - generic: city
+    - generic [ref=e48]:
+      - generic [ref=e52]:
+        - region "Map" [ref=e53]
+        - link "© OpenStreetMap" [ref=e58] [cursor=pointer]:
+          - /url: http://www.openstreetmap.org/copyright
+      - generic [ref=e59]:
+        - heading "Connect our global flight map to your digital platforms." [level=2] [ref=e60]
+        - link "Optimize your experience" [ref=e61] [cursor=pointer]:
+          - /url: https://www.flightaware.com/commercial/integrated-maps/
+          - generic [ref=e62]:
+            - text: Optimize your experience
+            - img [ref=e63]
+    - generic [ref=e66]:
+      - generic [ref=e67]:
+        - heading "Innovative products powered by best-in-class data." [level=2] [ref=e68]
+        - heading "Elevate your business with AI-assisted technology from FlightAware Foresight." [level=3] [ref=e69]
+        - link "Learn more about FlightAware Foresight" [ref=e70] [cursor=pointer]:
+          - /url: https://www.flightaware.com/commercial/foresight/
+          - generic [ref=e71]:
+            - text: Learn more about FlightAware Foresight
+            - img [ref=e72]
+        - img "Elevate your business with AI-assisted technology from FlightAware Foresight." [ref=e75]
+      - generic [ref=e77]:
+        - heading "Delivering data to developers on demand." [level=2] [ref=e78]
+        - heading "AeroAPI is a robust, query-based API giving developers access to a huge amount of FlightAware’s current and historical data." [level=3] [ref=e79]
+        - link "Integrate AeroAPI into your platform" [ref=e80] [cursor=pointer]:
+          - /url: https://www.flightaware.com/commercial/aeroapi/
+          - generic [ref=e81]:
+            - text: Integrate AeroAPI into your platform
+            - img [ref=e82]
+      - generic [ref=e86]:
+        - heading "Unlock real-time global flight tracking and ADS-B flight data." [level=2] [ref=e87]
+        - heading "Tap into the data feed inside FlightAware Firehose to access the status and information for all flights on the ground and in the air." [level=3] [ref=e88]
+        - link "Discover more about FlightAware Firehose" [ref=e89] [cursor=pointer]:
+          - /url: https://www.flightaware.com/commercial/firehose/
+          - generic [ref=e90]:
+            - text: Discover more about FlightAware Firehose
+            - img [ref=e91]
+      - link "See all products" [ref=e94] [cursor=pointer]:
+        - /url: https://www.flightaware.com/commercial
+        - generic [ref=e95]:
+          - text: See all products
+          - img [ref=e96]
+    - generic [ref=e100]:
+      - heading "Secure, private fleet tracking." [level=2] [ref=e101]
+      - heading "Keep track of every aircraft in your private fleet—including helicopters—with customized monitoring packages tailored to operations of any size." [level=3] [ref=e102]
+      - heading "Compare tiers" [level=4] [ref=e103]:
+        - link "Compare tiers" [ref=e104] [cursor=pointer]:
+          - /url: https://www.flightaware.com/commercial/global
+          - generic [ref=e105]:
+            - text: Compare tiers
+            - img [ref=e106]
+    - generic [ref=e109]:
+      - heading "Watch the world take flight." [level=2] [ref=e110]
+      - heading "Explore dynamic photos of aircraft taken and shared by the FlightAware community." [level=3] [ref=e111]
+      - generic [ref=e112]:
+        - img "Airbus A320 (EC-MQE)" [ref=e114]
+        - img "Cessna Caravan (N558EX)" [ref=e116]
+        - img "Gulfstream Aerospace Gulfstream G650 (N312AT)" [ref=e118]
+        - img "Warbirds" [ref=e120]
+        - img "Piper Tomahawk with Dog" [ref=e122]
+        - img "Boeing 747-400 (PH-BFG)" [ref=e124]
+        - img "Boeing 757-200" [ref=e126]
+        - img "Boeing 777-200 (N852FD)" [ref=e128]
+        - img "De Havilland Mosquito (N474PZ)" [ref=e130]
+        - img "Boeing 787-8 (N787BA)" [ref=e132]
+        - img "Canadair CL-415 SuperScooper (N385AC)" [ref=e134]
+        - img "TFL3131" [ref=e136]
+      - heading "See all photos" [level=4] [ref=e138]:
+        - link "See all photos" [ref=e139] [cursor=pointer]:
+          - /url: https://www.flightaware.com/photos
+          - generic [ref=e140]:
+            - text: See all photos
+            - img [ref=e141]
+    - generic [ref=e145]:
+      - generic [ref=e146]:
+        - heading "Worldwide tracking, in your hands." [level=2] [ref=e147]
+        - paragraph [ref=e148]: Download the FlightAware app to stay up to date on the go.
+        - img "apps-qr-code" [ref=e149]
+      - generic [ref=e150]:
+        - switch "iOS Android" [checked] [ref=e151] [cursor=pointer]:
+          - generic [ref=e152]: iOS
+          - generic [ref=e153]: Android
+        - img "ios-center" [ref=e155]
+    - generic [ref=e157]:
+      - heading "Customize your tracking." [level=2] [ref=e158]
+      - paragraph [ref=e159]: Create your free FlightAware account and unlock real-time tracking, custom alerts, and more.
+      - link "Sign up" [ref=e161] [cursor=pointer]:
+        - /url: https://login.flightaware.com/signup
+  - contentinfo [ref=e162]:
+    - generic [ref=e164]:
+      - img "FlightAware logo" [ref=e166]
+      - generic [ref=e167]:
+        - navigation [ref=e169]:
+          - heading "About" [level=6] [ref=e170]
+          - list [ref=e171]:
+            - listitem [ref=e172]:
+              - link "About FlightAware" [ref=e173] [cursor=pointer]:
+                - /url: https://www.flightaware.com/about/
+            - listitem [ref=e174]:
+              - link "Newsroom" [ref=e175] [cursor=pointer]:
+                - /url: https://www.flightaware.com/news/
+            - listitem [ref=e176]:
+              - link "Advertise With Us" [ref=e177] [cursor=pointer]:
+                - /url: https://www.flightaware.com/commercial/advertising/
+            - listitem [ref=e178]:
+              - link "Careers" [ref=e179] [cursor=pointer]:
+                - /url: https://www.flightaware.com/about/careers/
+            - listitem [ref=e180]:
+              - link "Webinars" [ref=e181] [cursor=pointer]:
+                - /url: https://go.flightaware.com/webinars
+            - listitem [ref=e182]:
+              - link "Blog" [ref=e183] [cursor=pointer]:
+                - /url: https://blog.flightaware.com/
+            - listitem [ref=e184]:
+              - link "Engineering Blog" [ref=e185] [cursor=pointer]:
+                - /url: https://flightaware.engineering/
+            - listitem [ref=e186]:
+              - link "Store" [ref=e187] [cursor=pointer]:
+                - /url: https://flightaware.store/
+        - generic [ref=e188]:
+          - navigation [ref=e189]:
+            - heading "Community" [level=6] [ref=e190]
+            - list [ref=e191]:
+              - listitem [ref=e192]:
+                - link "Squawks" [ref=e193] [cursor=pointer]:
+                  - /url: https://www.flightaware.com/squawks/
+              - listitem [ref=e194]:
+                - link "Discussion" [ref=e195] [cursor=pointer]:
+                  - /url: https://discussions.flightaware.com/
+              - listitem [ref=e196]:
+                - link "Photos" [ref=e197] [cursor=pointer]:
+                  - /url: https://www.flightaware.com/photos/
+              - listitem [ref=e198]:
+                - link "ADS-B Statistics" [ref=e199] [cursor=pointer]:
+                  - /url: https://www.flightaware.com/adsb/stats/
+          - navigation [ref=e200]:
+            - heading "Tracking" [level=6] [ref=e201]
+            - list [ref=e202]:
+              - listitem [ref=e203]:
+                - link "Flight Finder" [ref=e204] [cursor=pointer]:
+                  - /url: https://www.flightaware.com/live/findflight/
+              - listitem [ref=e205]:
+                - link "IFR Route Analyzer" [ref=e206] [cursor=pointer]:
+                  - /url: https://www.flightaware.com/statistics/ifr-route/
+        - navigation [ref=e208]:
+          - heading "Products" [level=6] [ref=e209]
+          - list [ref=e210]:
+            - listitem [ref=e211]:
+              - link "AeroAPI" [ref=e212] [cursor=pointer]:
+                - /url: https://www.flightaware.com/commercial/aeroapi/
+            - listitem [ref=e213]:
+              - link "FlightAware Firehose" [ref=e214] [cursor=pointer]:
+                - /url: https://www.flightaware.com/commercial/firehose/
+            - listitem [ref=e215]:
+              - link "FlightAware Foresight" [ref=e216] [cursor=pointer]:
+                - /url: https://www.flightaware.com/commercial/foresight/
+            - listitem [ref=e217]:
+              - link "Reports" [ref=e218] [cursor=pointer]:
+                - /url: https://www.flightaware.com/commercial/reports/
+            - listitem [ref=e219]:
+              - link "Integrated Maps" [ref=e220] [cursor=pointer]:
+                - /url: https://www.flightaware.com/commercial/integrated-maps/
+            - listitem [ref=e221]:
+              - link "FlightAware Aviator" [ref=e222] [cursor=pointer]:
+                - /url: https://www.flightaware.com/commercial/aviator/
+            - listitem [ref=e223]:
+              - link "FlightAware Global" [ref=e224] [cursor=pointer]:
+                - /url: https://www.flightaware.com/commercial/global/
+            - listitem [ref=e225]:
+              - link "FlightAware FBO Toolbox" [ref=e226] [cursor=pointer]:
+                - /url: https://www.flightaware.com/commercial/fbo-toolbox/
+            - listitem [ref=e227]:
+              - link "FlightAware TV℠" [ref=e228] [cursor=pointer]:
+                - /url: https://www.flightaware.com/commercial/tv/
+            - listitem [ref=e229]:
+              - link "GlobalBeacon" [ref=e230] [cursor=pointer]:
+                - /url: https://www.flightaware.com/commercial/globalbeacon/
+            - listitem [ref=e231]:
+              - link "ADS-B Receivers" [ref=e232] [cursor=pointer]:
+                - /url: https://www.flightaware.com/adsb/piaware/
+        - generic [ref=e233]:
+          - navigation [ref=e234]:
+            - heading "Customer Service" [level=6] [ref=e235]
+            - list [ref=e236]:
+              - listitem [ref=e237]:
+                - link "FAQs" [ref=e238] [cursor=pointer]:
+                  - /url: https://www.flightaware.com/about/faq/
+              - listitem [ref=e239]:
+                - link "Contact Us" [ref=e240] [cursor=pointer]:
+                  - /url: https://www.flightaware.com/about/contact/
+          - generic [ref=e241]:
+            - link "Get our mobile apps" [ref=e242] [cursor=pointer]:
+              - /url: https://www.flightaware.com/apps
+              - img [ref=e243]
+              - text: Get our mobile apps
+            - navigation [ref=e245]:
+              - list [ref=e246]:
+                - listitem [ref=e247]:
+                  - link "Facebook" [ref=e248] [cursor=pointer]:
+                    - /url: https://www.facebook.com/FlightAware
+                    - img [ref=e249]
+                - listitem [ref=e251]:
+                  - link "Instagram" [ref=e252] [cursor=pointer]:
+                    - /url: https://www.instagram.com/flightaware/
+                    - img [ref=e253]
+                - listitem [ref=e255]:
+                  - link "LinkedIn" [ref=e256] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/flightaware/
+                    - img [ref=e257]
+                - listitem [ref=e259]:
+                  - link "X" [ref=e260] [cursor=pointer]:
+                    - /url: https://twitter.com/flightaware
+                    - img [ref=e261]
+      - separator [ref=e263]
+      - navigation [ref=e264]:
+        - list [ref=e265]:
+          - listitem [ref=e266]: © 2026 FlightAware
+          - listitem [ref=e267]:
+            - text: /
+            - link "Privacy" [ref=e268] [cursor=pointer]:
+              - /url: https://www.flightaware.com/about/privacy
+          - listitem [ref=e269]:
+            - text: /
+            - link "Terms of Use" [ref=e270] [cursor=pointer]:
+              - /url: https://www.flightaware.com/about/terms-of-use
+          - listitem [ref=e271]:
+            - text: /
+            - link "Cookie Settings" [ref=e272] [cursor=pointer]:
+              - /url: "#"
+  - alert [ref=e273]
+  - dialog "Privacy" [ref=e275]:
+    - generic [ref=e277]:
+      - generic [ref=e280]:
+        - text: FlightAware uses cookies to keep our site free, enhance your experience, and to analyze performance and traffic. By clicking “Allow All”, you agree to storing cookies on your device.
+        - link "Legal Information, opens in a new tab" [ref=e281] [cursor=pointer]:
+          - /url: https://www.flightaware.com/about/privacy/
+          - text: Privacy Statement
+      - generic [ref=e283]:
+        - button "Cookie Settings, Opens the preference center dialog" [ref=e284] [cursor=pointer]: Cookie Settings
+        - button "Allow All" [ref=e285] [cursor=pointer]
+    - button "Close" [ref=e287] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1  | const { test, expect } = require('@playwright/test');
+  2  | test("@Web Morevalidations", async ({ page }) => {
+  3  |     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
+  4  |     await page.goto("https://www.amazon.in/");
+  5  |     await page.goBack();
+  6  |     await page.goForward();
+  7  |     await page.goBack();
+  8  |     await page.locator("#hide-textbox").click();
+  9  |     await expect(await page.locator("#displayed-text")).toBeHidden();
+  10 |     await page.locator("#show-textbox").click();
+  11 |     await expect(await page.locator("#displayed-text")).toBeVisible();
+  12 |     //await page.pause();
+  13 |     page.on("dialog", dialog => dialog.accept());
+  14 |     //page.on("dialog",dialog=>dialog.dismiss());
+  15 |     await page.locator("#confirmbtn").click();
+  16 |     await page.locator("#mousehover").hover();
+  17 | 
+  18 |     const iframe = await page.frameLocator("#courses-iframe");
+  19 |     await iframe.locator("li a[href*='lifetime-access']:visible").click();
+  20 |     const cust = await iframe.locator(".text h2").textContent();
+  21 |     console.log(cust.split(" ")[1]);
+  22 | })
+  23 | 
+  24 | 
+  25 | test("@Web ScreenShots Test", async ({page}) => {
+  26 |     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
+  27 |     await page.locator("#displayed-text").screenshot({path:'tests/screenshots/partialSS.png'});
+  28 |     await page.locator("#hide-textbox").waitFor();
+  29 |     await page.locator("#hide-textbox").click();
+  30 |     await page.screenshot({path:'tests/screenshots/wholePageSS.png'});
+  31 |     await expect(await page.locator("#displayed-text")).toBeHidden();
+  32 | });
+  33 | 
+  34 | test("Visual testing", async ({page})=>{
+  35 |     await page.goto("https://flightaware.com/");
+> 36 |     await expect(await page.screenshot()).toMatchSnapshot('flightawareLanding.png')
+     |                                           ^ Error: expect(Buffer).toMatchSnapshot(expected) failed
+  37 | });
+```

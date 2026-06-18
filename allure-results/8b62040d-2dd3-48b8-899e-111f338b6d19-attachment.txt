@@ -1,0 +1,17 @@
+[ 'ADIDAS ORIGINAL', 'ZARA COAT 3', 'iphone 13 pro' ]
+0
+Hello0
+ADIDAS ORIGINAL
+Hello1
+ZARA COAT 3
+Product added to cart
+1
+Promise { <pending> }
+Credit Card Number 
+Expiry Date 
+CVV Code ?
+okk
+Name on Card 
+Promise { <pending> }
+Apply Coupon 
+* Coupon Applied
