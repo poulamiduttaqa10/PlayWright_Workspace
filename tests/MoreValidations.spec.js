@@ -5,6 +5,7 @@ test("@Web Morevalidations", async ({ page }) => {
     await page.goBack();
     await page.goForward();
     await page.goBack();
+    await page.locator("#hide-textbox").waitFor();
     await page.locator("#hide-textbox").click();
     await expect(await page.locator("#displayed-text")).toBeHidden();
     await page.locator("#show-textbox").click();
